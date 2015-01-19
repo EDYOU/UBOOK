@@ -1,0 +1,22 @@
+{
+  "name": "ubook",
+  "version": "0.0.1",
+  "description": "Ubook webapp. Allows students to buy, sell, trade books with students at their school.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "school",
+    "books",
+    "college"
+  ],
+  "author": "Saleh Kaddoura",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.10.1",
+    "express": "^4.11.0",
+    "mongoose": "^3.8.21",
+    "passport": "^0.2.1"
+  }
+}

@@ -1,0 +1,62 @@
+User Model : {
+    "_id" : "userId hash",
+    "school_id" : "school_id matching school a school",
+    "name": "string",
+    "school_name": "string",
+    "username": "string",
+    "email": "string",
+    "password": "password hash",
+    "subjects": {
+        "subject1": "string of subjectid",
+    },
+    "classes" : {
+        "class1": "string of class1id"
+    }
+}
+
+School Model : {
+    "_id": "school_id",
+    "name": "string",
+    "location": "string",
+    "student_num" : "string",
+    "reg_student_num" : "string",
+    "subjects": {
+        "subject1": "string of subjectid",
+    },
+    "classes": {
+        "class1": "string of classid",
+    }
+}
+
+Subject Model : {
+    "_id": "subjectid",
+    "name": "string",
+    "school": "what school is this subject assoicated with?",
+    "classes": "what classes is this subject assoicated with?"
+}
+
+Class Model : {
+    "_id": "class_id",
+    "subject_id": "id of subject class is associated with",
+    "name": "string",
+    "class_code": "string",
+    "school_id": "what school is this class appart of?",
+    "num_of_student": "num of students in this class",
+    "books": {
+        "book1": "id of book1 associated with this class"
+    }
+}
+
+Book Model  : {
+    "_id": "book id",
+    "name": "string",
+    "author": "string",
+    "isbn": "string",
+    "seller": {
+        "object of seller goes here": "",
+    },
+    "class": "class_id",
+    "subject": "subjectid",
+    "school": "school_id",
+    "location": "location"
+}
